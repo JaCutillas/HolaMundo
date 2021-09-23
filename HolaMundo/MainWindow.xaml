@@ -1,0 +1,27 @@
+﻿<Window x:Class="HolaMundo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HolaMundo"
+        mc:Ignorable="d"
+        Title="Titulo" Height="450" Width="800"
+        Icon="assets/poppy.ico">
+    <Window.Resources>
+        <Color x:Key="Color1">#FFCBEEB7</Color>
+        <SolidColorBrush x:Key="colorLetra" Color="#FF9172AA"/>
+    </Window.Resources>
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FFCBB585" Offset="1"/>
+            <GradientStop Color="#FFCBEEB7"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <TextBlock x:Name="MensajeTextBlock" HorizontalAlignment="Left" Margin="122,66,0,0" TextWrapping="Wrap" Text="Adios Mundo" VerticalAlignment="Top" RenderTransformOrigin="-0.294,0.548" FontFamily="Rockwell" FontSize="72" FontWeight="Bold" FontStretch="SemiExpanded" Width="660" Foreground="{DynamicResource colorLetra}"/>
+        <TextBlock HorizontalAlignment="Left" Margin="282,195,0,0" TextWrapping="Wrap" Text="Nombre" VerticalAlignment="Top" Foreground="{DynamicResource colorLetra}" FontFamily="Rockwell" FontSize="36" FontStyle="Italic"/>
+        <TextBox x:Name="NombreTextBox" HorizontalAlignment="Left" Height="23" Margin="287,241,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Mande" HorizontalAlignment="Left" Margin="313,278,0,0" VerticalAlignment="Top" Width="75" FontFamily="Rockwell" Click="Button_Click"/>
+        <Rectangle HorizontalAlignment="Left" Height="140" Margin="263,176,0,0" Stroke="#FF070A06" VerticalAlignment="Top" Width="169" StrokeThickness="15"/>
+    </Grid>
+</Window>
